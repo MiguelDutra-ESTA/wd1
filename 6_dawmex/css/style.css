@@ -1,0 +1,35 @@
+body, 
+html {
+    padding: 0;
+    margin: 0;
+}
+
+#seccao-inicial {
+    width: 100vw;
+    height: 95vh;
+    background-color: #553f37;
+    background-image: url(../img/fundo-inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.filtro-gradiente {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, rgba(85, 63, 55, 0.00) 0%, #553F37 100%);
+    background: rgb(85,63,55);
+    background: linear-gradient(90deg, rgba(85,63,55,1) 0%, rgba(85,63,55,0) 100%); 
+    z-index: 1;
+}
+
+.container {
+    background-color: red;
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+} 

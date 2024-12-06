@@ -1,0 +1,354 @@
+/* Teste Inicial */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+    color: green !important;
+}
+
+h1{
+    color: yellow;
+}
+
+/* Classes e IDs */
+
+.titulo-principal{
+    color: purple;
+}
+
+h3#titulo-noticia{
+    color: orange;
+}
+
+/* Fundos */
+
+#fundos-section #teste-fundo-1{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    background-image: url(../img/);
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+#fundos-section #teste-fundo-2{
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/);
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+    margin-bottom: 1000px;
+    /* background: black url(../img/) no-repeat left bottom; */
+}
+
+.quadrado {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+}
+
+/* Bordas */
+.com-borda {
+    border-style: solid;
+    border-style: dotted;
+    border-style: dashed;
+    border-width: 5px;
+    border-width: 1px;
+    border-width: 10px;
+    border-color: red;
+    border-color: red green blue yellow;
+    /* border-style: hidden; */
+    border-radius: 30px;
+    border-radius: 10px 30px 50px 20px;
+    border-top-style: solid;
+    /* SHORTHAND */
+    border: 5px solid purple;
+    border-top: 10px dashed yellow;
+}
+
+/* Margens */
+#margens-paddings {
+    background-color: green;
+}
+
+.teste-margens {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 2rem;
+    margin-bottom: 20px;   
+    margin: 10px 20px 30px 40px;
+}
+
+.margem-negativa {
+    margin-top: -100px;
+}
+
+.centrar-margens {
+    margin: 0 auto;
+}
+
+#teste-padding {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding: 10px 20px 30px 40px;
+    box-sizing: border-box;
+}
+
+/* MEDIDAS */
+#medidas {
+    /* display: inline-block; */
+    width: 100%;
+    height: 500px;
+    background-color: blanchedalmond;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#medidas .teste-medidas {
+    width: 50%;
+    height: 50%;
+    max-width: 200px;
+    background-color: blueviolet;
+}
+
+#teste-outline {
+    /* outline: none; */
+    outline-color: red;
+}
+
+section#texto{
+    width: 50%;
+    padding: 2rem;
+    font-size: 40px;
+}
+
+section#texto{
+    font-size: 14px;
+    font-size: 0.5em;
+    font-size: 1rem;
+    /* em: relativo ao pai (font-size) */
+    text-align: justify;
+    text-indent: 1rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.3rem;
+    word-spacing: 1rem;
+}
+
+.transformar-texto {
+    color: blueviolet;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+}
+
+.titulo-sombra {
+    text-shadow: 3px 2px red;
+    text-shadow: 3px 5px 6px rgba(65,25,206,0.73);
+}
+
+/* FONTS */
+.titulo-sombra {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 800;
+    /* font-style: italic; */
+}
+
+#texto a{
+    color: brown;
+    text-decoration: none;
+}
+
+#texto a:visited{
+    color: brown;
+}
+
+#texto a:hover{
+    color: blue;
+}
+
+#texto a:active{
+    color: orange;
+}
+
+#texto ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#texto ol {
+    list-style: lower-roman;
+    list-style-position: inside;
+}
+
+/* TABELAS */
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+th {
+    background-color: rgb(78, 78, 118);
+    color: white;
+}
+
+#teste-display {
+    padding: 10rem 2rem;
+    padding: 0rem;
+    background-color: rgb(78, 78, 118);
+}
+
+#teste-display .elemento {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    margin: 1rem;
+    display: block;
+    display: inline-block;
+    /* display: none; */
+    visibility: hidden;
+}
+
+#teste-flex {
+    width: 100vw;
+    height: 100vh;
+    /* padding: 2rem; */
+    box-sizing: border-box;
+    background-color: #313150;
+}
+
+#teste-flex .filho {
+    width: 100px;
+    height: 100px;
+    background-color: #df603f;
+}
+
+#teste-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+#teste-flex {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: flex-start;
+}
+
+section#teste-grid{
+    width: 100vw;
+    background-color: beige;
+}
+
+.container {
+    max-width: 1024px;
+    background-color: rgb(211, 211, 235);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 500px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 400px 200px;
+    gap: 10px;
+}
+
+.grid .filho {
+    background-color: orangered;
+    width: 100%;
+    /* height: 100px; */
+}
+
+/* Position */
+#exemplo-position {
+    width: 100%;
+    height: 1500px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+div.teste-position {
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    position: fixed;
+    position: absolute;
+    position: sticky;
+    position: static;
+    top: -50px;
+    /* left: 0px; */
+    /* bottom: 0px; */
+    right: 10px;
+}
+
+/* Floats */
+#exemplo-float {
+    width: 100%;
+    height: 1500px;
+    background-color: blanchedalmond;
+}
+
+#exemplo-float .teste-float {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 5px;
+}
+
+#exemplo-float .impostor {
+    float: left;
+    background-color: purple !important;
+}
+
+/* Media Queries */
