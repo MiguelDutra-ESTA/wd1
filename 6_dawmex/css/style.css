@@ -2,6 +2,7 @@ body,
 html {
     padding: 0;
     margin: 0;
+    font-family: "Figtree", sans-serif;
 }
 
 #seccao-inicial {
@@ -27,9 +28,111 @@ html {
 }
 
 .container {
-    background-color: red;
     max-width: 1320px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-} 
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.conteudo-inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 90vh;
+    width: 50%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.titulo-xxl {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-branco {
+    color: white
+}
+
+.texto-amarelo {
+    color: #ffb61c;
+}
+
+.texto-verde {
+    color: #6caa50;
+}
+
+.paragrafo {
+    line-height: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+.btn {
+    background-color: black;
+    padding: 1.2rem 3rem;
+    color: white;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #754444;
+    transform: scale(1.02);
+}
+
+.btn:active {
+    background-color: #ffb61c;
+    transform: scale(0.95);
+}
+
+.vermelho {
+    background-color: #d51719;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 300 to 900 */
+
+.figtree-uniquifier {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.londrina-solid-thin {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.londrina-solid-light {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.londrina-solid-regular {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.londrina-solid-black {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
