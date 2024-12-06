@@ -7,12 +7,13 @@ html {
 
 #seccao-inicial {
     width: 100vw;
-    height: 95vh;
+    min-height: 95vh;
     background-color: #553f37;
     background-image: url(../img/fundo-inicio.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+    box-sizing: border-box;
 }
 
 .filtro-gradiente {
@@ -42,6 +43,8 @@ html {
     justify-content: center;
     align-items: flex-start;
     min-height: 90vh;
+    padding: 100px 0;
+    box-sizing: border-box;
     width: 50%;
 }
 
@@ -103,36 +106,21 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #d51719;
 }
 
-/* // <uniquifier>: Use a unique and descriptive class name */
-/* // <weight>: Use a value from 300 to 900 */
-
-.figtree-uniquifier {
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+/* MEDIA QUERIES */
+/* Tablets */
+@media screen and (max-width: 700px) {
+    .conteudo-inicial {
+        width: 75%;
+    }
 }
 
-.londrina-solid-thin {
-  font-family: "Londrina Solid", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+/* Mobile */
+@media screen and (max-width: 500px) {
+    .conteudo-inicial {
+        width: 90%;
+    }
 
-.londrina-solid-light {
-  font-family: "Londrina Solid", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.londrina-solid-regular {
-  font-family: "Londrina Solid", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.londrina-solid-black {
-  font-family: "Londrina Solid", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+    .titulo-xxl {
+        font-size: 4rem;
+    }
 }
