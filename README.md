@@ -1,5 +1,5 @@
 # Web Design I
-O código fonte de Web Design I
+O código fonte da aula de Web Design I
 
 ## Obter o código
 - Na linha de comandos, utilizando o Git, execute o seguinte comando:
