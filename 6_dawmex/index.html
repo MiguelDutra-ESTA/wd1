@@ -12,17 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="index.html"><img src="img/logo-horizontal.svg" alt="DawMex - Restaurante Mexicano"></a>
-            <ul class="links menu">
+            <ul class="links-menu">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="#">Reservar</a></li>
                 <li><a href="#">Contactos</a></li>
             </ul>
+            <button class="btn-menu-mobile"><img src="img/menu-ico.svg"></button>
         </div>
     </nav>
     <section id="seccao-inicial">
@@ -37,5 +39,14 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const btnMenu = document.querySelector('.btn-menu-mobile')
+        const menuMobile = document.querySelector('.links-menu')
+
+        btnMenu.addEventListener('click', function() {
+            menuMobile.style.top = 0;
+        });
+    </script>
 </body>
 </html>
