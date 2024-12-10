@@ -141,26 +141,33 @@ h1,h2,h3,h4,h5,h6 {
     color: #6caa50
 }
 
-.btn-menu-mobile {
+.btn-menu-mobile, .fechar-menu {
     background-color: transparent;
     border: none;
     padding: 1rem;
     display: none;
 }
 
-.btn-menu-mobile img {
+.btn-menu-mobile img, .fechar-menu img {
     width: 25px;
 }
 
 /* MEDIA QUERIES */
 /* Tablets */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
     .conteudo-inicial {
         width: 75%;
     }
 
     .btn-menu-mobile {
         display: block;
+    }
+
+    .fechar-menu {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
     }
 
     .navbar ul.links-menu {

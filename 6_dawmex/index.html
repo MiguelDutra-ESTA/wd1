@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <nav class="navbar">
@@ -23,6 +22,7 @@
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="#">Reservar</a></li>
                 <li><a href="#">Contactos</a></li>
+                <li><button class="fechar-menu"><img src="img/fechar-ico.svg"></button></li>
             </ul>
             <button class="btn-menu-mobile"><img src="img/menu-ico.svg"></button>
         </div>
@@ -40,12 +40,34 @@
         </div>
     </section>
 
+    <section id="boas-vindas">
+        <div class="container">
+            <div class="grid-2-col">
+                <div class="col">
+                    <img src="">
+                </div>
+                <div class="col">
+                    <h3 class="titulo-l texto-verde">Bem-vindo ao DawMex</h3>
+                    <p class="paragrafo">Localizado nos Açores, o Dawmex é o espaço onde a verdadeira culinária mexicana ganha vida. Com uma mistura de sabores intensos, frescos e autênticos, oferecemos uma experiência gastronómica única que vai transportar os seus sentidos até ao coração do México. </p>
+                    <p class="paragrafo">Dos tradicionais tacos aos deliciosos guacamoles e molhos caseiros, cada prato é preparado com paixão e dedicação. Venha descobrir o sabor da verdadeira comida mexicana num ambiente descontraído e acolhedor, onde cada refeição é uma celebração da cultura e da amizade.</p>
+                    <a href="#" class="btn vermelho">Saiba mais</a>
+                    <input type="date" name="" id="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         const btnMenu = document.querySelector('.btn-menu-mobile')
         const menuMobile = document.querySelector('.links-menu')
+        const btnFechar = document.querySelector('.fechar-menu')
 
         btnMenu.addEventListener('click', function() {
             menuMobile.style.top = 0;
+        });
+
+        btnFechar.addEventListener('click', function () {
+           menuMobile.style.top = '-100vh'; 
         });
     </script>
 </body>
