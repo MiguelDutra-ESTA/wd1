@@ -69,6 +69,12 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 2rem;
 }
 
+.titulo-m {
+    font-family: "Figtree", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .texto-branco {
     color: white
 }
@@ -116,6 +122,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .vermelho {
     background-color: #d51719;
+}
+
+.amarelo {
+    background-color: #ffb61c;
 }
 
 .navbar {
@@ -192,6 +202,76 @@ h1,h2,h3,h4,h5,h6 {
     align-items: flex-start;
 }
 
+#menu-home {
+    padding: 100px 0;
+    background-color: #6caa50;
+    background-image: url('../img/fundo-menu.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#menu-home .filtro-verde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 100, 61, 0.85);
+    z-index: 0;
+}
+
+.grid-menu-home {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 560px 1fr;
+    gap: 2rem;
+    padding-left: 6rem;
+}
+
+.grid-menu-home .col {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-menu-home {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.conteudo-menu-home .btn {
+    margin-top: 2rem;
+}
+
+#menu-home .slider {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+}
+
+.prato {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.prato img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+}
+
 /* MEDIA QUERIES */
 /* Tablets */
 @media screen and (max-width: 880px) {
@@ -221,6 +301,11 @@ h1,h2,h3,h4,h5,h6 {
         padding: 4rem 0;
         transition: 0.4s ease-in-out;
     }
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /* Mobile */
@@ -231,5 +316,9 @@ h1,h2,h3,h4,h5,h6 {
 
     .titulo-xxl {
         font-size: 4rem;
+    }
+
+    #boas-vindas img {
+        height: 300px;
     }
 }
