@@ -61,6 +61,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 1rem;
 }
 
+.titulo-l {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 900;
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
 .texto-branco {
     color: white
 }
@@ -71,6 +79,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .texto-verde {
     color: #6caa50;
+}
+
+.texto-verde-escuro {
+    color: #4C643D;
 }
 
 .paragrafo {
@@ -150,6 +162,34 @@ h1,h2,h3,h4,h5,h6 {
 
 .btn-menu-mobile img, .fechar-menu img {
     width: 25px;
+}
+
+#boas-vindas {
+    width: 100vw;
+    padding: 100px 0;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#boas-vindas img {
+    width: 100%;
+    height: 510px;
+    object-fit: cover;
+}
+
+#boas-vindas p:nth-child(3) {
+    padding-bottom: 5rem;
+}
+
+#boas-vindas .col:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* MEDIA QUERIES */
