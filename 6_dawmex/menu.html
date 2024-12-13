@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAWMex</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><img src="img/logo-horizontal.svg" alt="DawMex - Restaurante Mexicano"></a>
+            <ul class="links-menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Reservar</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><button class="fechar-menu"><img src="img/fechar-ico.svg"></button></li>
+            </ul>
+            <button class="btn-menu-mobile"><img src="img/menu-ico.svg"></button>
+        </div>
+    </nav>
+    
+    <header class="header-pagina fundo-menu">
+        <div class="container">
+            <h3 class="titulo-l">Menu</h3>
+        </div>
+    </header>
+
+    <section id="reserva-online">
+        <div class="filtro-preto"></div>
+        <div class="container-mini">
+            <h3 class="titulo-l texto-bege">Faça a sua reserva online</h3>
+            <p class="paragrafo texto-bege">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad autem eaque recusandae deleniti a possimus dignissimos similique eligendi amet aspernatur.</p>
+            <a href="#" class="btn vermelho">Reserve já</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="grid-3-col">
+                <div class="col">
+                    <img src="img/logo-horizontal.svg" alt="DawMex" class="footer-logo">
+                    <ul class="contactos-footer">
+                        <li>4140 Parker Rd. Allentown, New Mexico 31134</li>
+                        <li>email@email.com</li>
+                        <li>+351 912 345 678</li>
+                        <li>+351 296 234 567</li>
+                    </ul>
+                    <ul class="lista-social">
+                        <li><a href="#"><img src="img/icons/ico-facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/icons/ico-instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/icons/ico-x.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/icons/ico-tripadvisor.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="links-footer">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Reservar</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="links-footer">
+                        <li><a href="#">Informações legais</a></li>
+                        <li><a href="#">Livro de reclamações</a></li>
+                        <li><a href="#">Termos e condições</a></li>
+                        <li><a href="#">Direitos Reservados</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btnMenu = document.querySelector('.btn-menu-mobile')
+        const menuMobile = document.querySelector('.links-menu')
+        const btnFechar = document.querySelector('.fechar-menu')
+
+        btnMenu.addEventListener('click', function() {
+            menuMobile.style.top = 0;
+        });
+
+        btnFechar.addEventListener('click', function () {
+           menuMobile.style.top = '-100vh'; 
+        });
+    </script>
+</body>
+</html>

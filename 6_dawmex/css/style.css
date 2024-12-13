@@ -196,6 +196,12 @@ h1,h2,h3,h4,h5,h6 {
     gap: 2rem;
 }
 
+.grid-3-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
 #boas-vindas img {
     width: 100%;
     height: 510px;
@@ -385,6 +391,63 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 }
 
+footer {
+    background-color: #4C643D;
+    padding: 2rem;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-logo {
+    margin-bottom: 2rem;
+}
+
+footer .contactos-footer {
+    margin-bottom: 3rem;
+}
+
+footer .contactos-footer li {
+    margin-bottom: 0.5rem;
+}
+
+footer .lista-social {
+    display: flex;
+    gap: 1.5rem
+}
+
+.links-footer li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+.links-footer li {
+    border-bottom: 1px solid #759B64;
+}
+
+.links-footer li a:hover {
+    text-decoration: underline;
+}
+
+/* PÁGINA MENU */
+.header-página {
+    width: 100vw;
+    min-height: 220px;
+    background-color: #362828;
+    background-size: cover;
+    background-position: center;
+}
+
+.fundo-menu {
+    background-image: url(../img/fundo-menu.jpg);
+}
+
 /* MEDIA QUERIES */
 /* Desktop */
 @media screen and (max-width: 1450px) {
@@ -444,6 +507,9 @@ h1,h2,h3,h4,h5,h6 {
         grid-template-columns: 1fr;
     }
 
+    .grid-3-col {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Mobile */
